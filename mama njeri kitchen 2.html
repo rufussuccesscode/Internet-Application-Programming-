@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mama Njeri's Kitchen</title>
+
+    <style>
+        body {
+            background-color: #f1f3f7;
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        .container {
+            background-color: white;
+            width: 90%;
+            margin: auto;
+            padding: 15px;
+        }
+
+        header {
+            background-color: #302013;
+            color: orange;
+            padding: 15px;
+        }
+
+        .hero {
+            background-color: #f47b32;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #ffcc33;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 7px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #ed512c;
+            color: white;
+            border: none;
+            padding: 8px;
+        }
+
+        .bottom {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #302013;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        @media(max-width: 600px) {
+            .content, .bottom {
+                flex-direction: column;
+            }
+
+            .box {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>What we are working toward</h2>
+
+    <p>
+        A one-page website for Mama Njeri's Kitchen,
+        a fictional Nairobi eatery.
+    </p>
+
+    <header>
+        <b>Mama Njeri's Kitchen</b>
+        <span style="float:right;">Menu - Order - Visit</span>
+    </header>
+
+    <div class="hero">
+        <h2>Fresh Kenyan food, cooked daily</h2>
+    </div>
+
+    <div class="content">
+
+        <div class="box" id="menu">
+            <h3>Menu (table)</h3>
+
+            <table>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Pilau</td>
+                    <td>KES 350</td>
+                </tr>
+
+                <tr>
+                    <td>Ugali & Sukuma</td>
+                    <td>KES 250</td>
+                </tr>
+
+                <tr>
+                    <td>Chapati (2)</td>
+                    <td>KES 100</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box" id="order">
+            <h3>Place an order (form)</h3>
+
+            <form>
+                <input type="text" placeholder="Your name" required>
+
+                <select required>
+                    <option>Pilau</option>
+                    <option>Ugali & Sukuma</option>
+                    <option>Chapati</option>
+                </select>
+
+                <button type="submit">Send order</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="box">
+            <h3>Gallery</h3>
+            <p>3 photos in a div grid (images)</p>
+
+             <img src="images/pilau.jpg" width="100" height="70">
+
+    <img src="images/chapati.jpg" width="100" height="70">
+
+    <img src="images/food.jpg" width="100" height="70">        </div>
+
+        <div class="box" id="visit">
+            <h3>Opening hours and contact (div)</h3>
+
+            <p>Monday - Saturday: 8AM - 9PM</p>
+            <p>Sunday: 9AM - 6PM</p>
+            <p>Location: Nairobi, Kenya</p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Mama Njeri's Kitchen
+    </footer>
+
+</div>
+
+</body>
+</html>
