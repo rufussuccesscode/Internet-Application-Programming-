@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savanna Brew Café</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4ec;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            color: #f4c27a;
+        }
+
+        nav {
+            background-color: #5d4037;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4c27a;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #5d4037;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("https://images.unsplash.com/photo-1445116572660-236099ec97a0")
+            center/cover;
+            color: white;
+            padding: 130px 20px;
+        }
+
+        .hero h2 {
+            color: white;
+            font-size: 42px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a0522d;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #6d351e;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            color: #795548;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #a0522d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery-container img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #795548;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #4e342e;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #f4c27a;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Savanna Brew Café</h1>
+        <p>Fresh Coffee, Great Moments</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+        <h2>Welcome to Savanna Brew Café</h2>
+        <p>Enjoy freshly brewed coffee and delicious meals.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Us</h2>
+
+        <p>
+            Savanna Brew Café is a welcoming café dedicated to providing
+            quality coffee, delicious meals and excellent customer service.
+            Our goal is to create a comfortable environment where customers
+            can relax, work and enjoy great food.
+        </p>
+
+        <br>
+
+        <p>
+            We believe every cup of coffee should create a memorable moment.
+            Visit us and experience the taste of quality.
+        </p>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Strong and freshly brewed coffee.</p>
+                <p class="price">KSh 200</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with steamed milk foam.</p>
+                <p class="price">KSh 300</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Smooth coffee mixed with fresh milk.</p>
+                <p class="price">KSh 350</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fresh Juice</h3>
+                <p>Refreshing natural fruit juice.</p>
+                <p class="price">KSh 250</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Sandwich</h3>
+                <p>Freshly prepared sandwich.</p>
+                <p class="price">KSh 400</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Chocolate Cake</h3>
+                <p>Delicious homemade chocolate cake.</p>
+                <p class="price">KSh 300</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+
+        <div class="gallery-container">
+
+            <img
+                src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+                alt="Coffee shop interior">
+
+            <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+                alt="Freshly brewed coffee">
+
+            <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+                alt="Cup of coffee">
+
+            <img
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24"
+                alt="Café seating area">
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>We would love to hear from you.</p>
+
+        <br>
+
+        <p><strong>Address:</strong> 14 Coffee Lane, Westlands, Nairobi</p>
+        <p><strong>Phone:</strong> +254 700 123 456</p>
+        <p><strong>Email:</strong> hello@savannabrew.example</p>
+
+        <br>
+
+        <div class="contact-form">
+
+            <form action="mailto:hello@savannabrew.example"
+                  method="post"
+                  enctype="text/plain">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject">
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Savanna Brew Café. All Rights Reserved.</p>
+        <p>Fresh Coffee, Great Moments.</p>
+    </footer>
+
+</body>
+</html>
+  
